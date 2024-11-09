@@ -1,0 +1,130 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #f9d423, #ff4e50, #f9a8d4); /* Tricolor background */
+  /* A tricolor gradient with soft yellow, orange, and pink colors */
+  transition: background 0.5s;
+}
+
+body.dark-mode {
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+  color: #ffffff;
+}
+
+.weather-app {
+  text-align: center;
+  padding: 20px;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  color: #333;
+}
+
+.weather-app.dark-mode h1 {
+  color: #ffffff;
+}
+
+.weather-app h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.search {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.search input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search button {
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search button:hover {
+  background-color: #0056b3;
+}
+
+#mode-toggle {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.weather-result {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.forecast {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.forecast-item {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.sunny {
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+}
+
+.cloudy {
+  background: linear-gradient(to right, #d3cce3, #e9e4f0);
+}
+
+.rainy {
+  background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+}
+
+.search input:focus {
+  border-color: #007BFF;
+}
+
+.search button:hover, #mode-toggle:hover {
+  background-color: #0056b3;
+}
+
+  

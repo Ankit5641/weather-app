@@ -1,4 +1,4 @@
-# 🌤️ Weather App
+# 🌤️ ClimaNow
 
 A responsive and interactive Weather App built using **HTML, CSS, and JavaScript**, providing real-time weather updates, 5-day forecasts, dark mode, geolocation, and voice search functionality.
 
@@ -28,8 +28,8 @@ A responsive and interactive Weather App built using **HTML, CSS, and JavaScript
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/weather-app.git
-2. Navigate into the project folder: cd weather-app
+   git clone https://github.com/your-username/ClimaNow.git
+2. Navigate into the project folder: cd ClimaNow
 3. Open index.html in your browser: start index.htmlconst API_KEY = "YOUR_API_KEY_HERE";
 4. Replace the placeholder API key in script.js with your own from OpenWeatherMap..
 5. 🌐 Live Demo : [Deploy your project on Vercel or GitHub Pages] 

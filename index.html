@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather App</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="weather-app">
-    <h1>Weather App</h1>
-    
+    <div class="container">
+        <h1>Weather App</h1>
+        
+        <!-- Dark Mode Toggle -->
+        <button id="themeToggle">🌙 Dark Mode</button>
+        
+        <!-- Search & Voice Input -->
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button id="voiceSearch">🎤</button>
+            <button id="searchBtn">Search</button>
+        </div>
+        
+        <!-- Weather Info -->
+        <div class="weather-info">
+            <h2 id="cityName"></h2>
+            <img id="weatherIcon" src="" alt="">
+            <p id="temperature"></p>
+            <p id="humidity"></p>
+            <p id="windSpeed"></p>
+        </div>
 
-
-    <div class="search">
-      <input type="text" id="city-input" placeholder="Enter city">
-      <button onclick="getWeather()">Search</button>
+        <!-- 5-Day Forecast -->
+        <div class="forecast">
+            <h3>5-Day Forecast</h3>
+            <div id="forecastContainer"></div>
+        </div>
     </div>
 
-    <button id="mode-toggle" onclick="toggleMode()">🌙 Dark Mode</button>
-
-    <div class="error-message" id="error-message"></div>
-    
-    <div id="weather-result" class="weather-result">
-      <div id="weather-icon"></div>
-    </div>
-
-    <div id="forecast" class="forecast"></div>
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

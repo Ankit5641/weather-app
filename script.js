@@ -1,4 +1,4 @@
-const API_KEY = "e5965f19888a11a88ea37d7a249a815e"; // Replace with your OpenWeatherMap API key
+const API_KEY = "Your Api Key"; // Replace with your OpenWeatherMap API key
 
 // Fetch Current Weather Data
 const fetchWeather = async (city) => {
